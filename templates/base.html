@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/homepage.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/menu.css' %}">
+    {% block css %}{% endblock %}
+</head>
+<body>
+{% include 'main/menu.html' %}
+
+
+  {% for message in messages %}
+    <div class="alert alert-primary" role="alert">
+      <p class="{{ message.tags }}">{{ message }}</p>
+    </div>
+    {% endfor %}
+
+
+
+{% block content %} {% endblock %}
+</body>
+</html>

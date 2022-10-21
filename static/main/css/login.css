@@ -1,0 +1,19 @@
+﻿.btn{
+    color:#333333;
+    background-color:white;
+    position:absolute;
+    left:40%
+}
+
+.content{
+    color:white;
+    position:absolute;
+    top:25%;
+    left:50%;
+    background-color:#333333;
+    background-color:rgba(0,0,0,0.6);
+    width:500px;
+    height:420px;
+    margin-left: -350px;
+    padding:110px;
+}
